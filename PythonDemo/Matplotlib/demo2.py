@@ -4,7 +4,7 @@ figure的使用
 """
 import matplotlib.pyplot as plt
 import numpy as np
-# 
+# 设置x的取值，取50个点
 x = np.linspace(-1, 1, 50)
 
 
@@ -20,10 +20,11 @@ plt.figure()
 plt.plot(x, y2)
 
 
-# figure 3，指定figure的编号并指定figure的大小, 指定线的颜色, 宽度和类型
-#一个坐标轴上画了两个图形
+# figure 3，指定figure的编号并指定figure的大小,
 y2 = x**2
-plt.figure(num = 5, figsize = (4, 4))
+plt.figure(num=5, figsize=(4, 4))
+# 在一个坐标轴上画两个图形
 plt.plot(x, y1)
-plt.plot(x, y2, color = 'red', linewidth = 1.0, linestyle = '--')
+# 指定线的颜色参数3, 宽度参数4和类型参数5
+plt.plot(x, y2, color='red', linewidth=1.0, linestyle='--')
 plt.show()
