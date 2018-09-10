@@ -2,7 +2,6 @@
 """
 figure图的嵌套
 """
-
 import matplotlib.pyplot as plt
 
 # 定义figure

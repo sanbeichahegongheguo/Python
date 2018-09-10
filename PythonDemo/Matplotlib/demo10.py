@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-绘制登高线图
+绘制等高线图
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -18,13 +18,12 @@ y = np.linspace(-3, 3, n)
 # 生成网格数据
 X, Y = np.meshgrid(x, y)
 
-
 # 填充等高线的颜色, 8是等高线分为几部分
-plt.contourf(X, Y, f(X, Y), 8, alpha = 0.75, cmap = plt.cm.hot)
+plt.contourf(X, Y, f(X, Y), 8, alpha=0.75, cmap=plt.cm.hot)
 # 绘制等高线
-C = plt.contour(X, Y, f(X, Y), 8, colors = 'black', linewidth = 0.5)
+C = plt.contour(X, Y, f(X, Y), 8, colors='black', linewidth=0.5)
 # 绘制等高线数据
-plt.clabel(C, inline = True, fontsize = 10)
+plt.clabel(C, inline=True, fontsize=10)
 
 # 去除坐标轴
 plt.xticks(())

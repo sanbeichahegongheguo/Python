@@ -2,7 +2,6 @@
 """
 绘制散点图
 """
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -15,7 +14,7 @@ y = np.random.normal(0, 1, n)
 # 计算颜色值
 color = np.arctan2(y, x)
 # 绘制散点图
-plt.scatter(x, y, s = 75, c = color, alpha = 0.5)
+plt.scatter(x, y, s=75, c=color, alpha = 0.5)
 # 设置坐标轴范围
 plt.xlim((-1.5, 1.5))
 plt.ylim((-1.5, 1.5))

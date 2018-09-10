@@ -32,4 +32,4 @@ ani = animation.FuncAnimation(fig = fig, func = update, init_func = init, interv
 plt.show()
 
 # 动画保存
-ani.save('sin.html', writer = 'imagemagick', fps = 30, dpi = 100)
+# ani.save('sin.html', writer='imagemagick', fps=30, dpi=100)

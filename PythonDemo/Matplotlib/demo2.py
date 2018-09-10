@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 figure的使用
+学习如何设置图像所在框的大小，以及设置图像线条性质
 """
 import matplotlib.pyplot as plt
 import numpy as np

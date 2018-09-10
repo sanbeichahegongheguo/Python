@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 简单图形绘制
+学习如何绘制2种图像，一是线形图，二是曲线图
 """
 import matplotlib.pyplot as plt
 import numpy as np

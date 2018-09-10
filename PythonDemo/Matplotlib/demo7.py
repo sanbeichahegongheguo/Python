@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Mar 14 17:11:15 2018
 设置坐标轴label上数字的样式
 """
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -29,6 +27,6 @@ ax.spines['left'].set_position(('data', 0))
 # 设置坐标轴label的大小，背景色等信息
 for label in ax.get_xticklabels() + ax.get_yticklabels():
     label.set_fontsize(12)
-    label.set_bbox(dict(facecolor = 'green', edgecolor = 'None', alpha = 0.7))
+    label.set_bbox(dict(facecolor='red', edgecolor='None', alpha=0.7))
 
 plt.show()

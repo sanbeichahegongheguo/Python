@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-设置坐标轴
+设置坐标轴label
 """
 import matplotlib.pyplot as plt
 import numpy as np

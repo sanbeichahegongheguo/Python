@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """
-subplot绘制多图 
+subplot绘制不平均分配的多图
+重点在于给plt.subplot()里的参数进行分配
 """
-
 import matplotlib.pyplot as plt
+import numpy as np
 
 plt.figure()
 
@@ -11,8 +12,10 @@ plt.figure()
 plt.subplot(2, 1, 1)
 plt.plot([0, 1], [0, 1])
 # 绘制第二个图
+x = np.linspace(-1, 1, 66)
+y = x**2 + 1
 plt.subplot(2, 3, 4)
-plt.plot([0, 1], [0, 1])
+plt.plot(x, y, color='red', linewidth=1.0, linestyle='--')
 # 绘制第三个图
 plt.subplot(2, 3, 5)
 plt.plot([0, 1], [0, 1])

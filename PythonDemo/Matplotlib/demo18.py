@@ -20,7 +20,7 @@ ax2.plot(x, y2, 'b--')
 
 # 设置label
 ax1.set_xlabel('X data')
-ax1.set_xlabel('Y1', color = 'g')
-ax2.set_xlabel('Y2', color = 'b')
+ax1.set_xlabel('Y1', color='g')
+ax2.set_xlabel('Y2', color='b')
 
 plt.show()
