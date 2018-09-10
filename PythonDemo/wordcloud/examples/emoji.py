@@ -18,7 +18,7 @@ from wordcloud import WordCloud
 
 d = path.dirname(__file__)
 
-#使用io.open将文件正确加载为UTF-8非常重要
+# 使用io.open将文件正确加载为UTF-8非常重要
 text = io.open(path.join(d, 'happy-emoji.txt')).read()
 
 # the regex used to detect words is a combination of normal words, ascii art, and emojis

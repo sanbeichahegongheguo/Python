@@ -38,8 +38,8 @@ plt.figure()
 # 重新着色词云并显示
 # 我们也可以直接在构造函数中给使用：color_func=image_colors 
 plt.imshow(wc.recolor(color_func=image_colors), interpolation="bilinear")
-plt.axis("off") #不显示坐标尺寸
+plt.axis("off")  # 不显示坐标尺寸
 plt.figure()
 plt.imshow(alice_coloring, cmap=plt.cm.gray, interpolation="bilinear")
-plt.axis("off") #不显示坐标尺寸
-plt.show()#一次绘制三张图
+plt.axis("off")  # 不显示坐标尺寸
+plt.show()  # 一次绘制三张图
