@@ -4,8 +4,8 @@ Created on Wed May 23 22:38:40 2018
 
 @author: Administrator
 """
-#录制视频
-#https://www.jianshu.com/p/2b79012c0228
+# 录制视频
+# https://www.jianshu.com/p/2b79012c0228
 import cv2
 capture = cv2.VideoCapture(0) 
 # 定义编码方式并创建VideoWriter对象 
@@ -18,4 +18,5 @@ while(capture.isOpened()):
         cv2.imshow('frame', frame) 
         if cv2.waitKey(1) == ord('q'): 
             break 
-    else: break
+    else:
+        break

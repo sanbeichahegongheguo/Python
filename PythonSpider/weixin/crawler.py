@@ -1,20 +1,11 @@
 # -*- coding: utf-8 -*-
 __author__ = "liuzhijun"
-
 import requests
-
-
-
-
-
-
-
 
 
 def crawl():
     # url中的参数需要根据自己的情况做调整
     url = "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDQ4MzU5OA==&scene=124&"
-
     headers = """
 Host: mp.weixin.qq.com
 Connection: keep-alive

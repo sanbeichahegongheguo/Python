@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 import urllib.request
 import urllib
 
-#获取网页
+# 获取网页
 def gethtml(url, headers={}):
     req = urllib.request.Request(url, headers=headers)
     response = urllib.request.urlopen(req)
@@ -19,7 +19,7 @@ def gethtml(url, headers={}):
     response.close()
     return content
 
-#解析音乐列表网页
+# 解析音乐列表网页
 def parsehtmlMusicList(html):
     soup = BeautifulSoup(html, 'lxml')
     list_pic = soup.select('ul#m-pl-container li div img')
@@ -41,4 +41,4 @@ url = gethtml(url, headers={
     'User-Agent': 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)',
     'Host': 'music.163.com'
 })
-parsehtmlMusicList(url) 
+parsehtmlMusicList(url)
